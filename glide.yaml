@@ -1,0 +1,6 @@
+package: github.com/tophatsteve/loremsvc
+import:
+- package: github.com/julienschmidt/httprouter
+  version: ^1.1.0
+- package: github.com/tophatsteve/margo
+  version: ^1.0.0
