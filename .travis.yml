@@ -5,9 +5,8 @@ script:
 - go build
 deploy:
   provider: gae
-  keyfile: loremsvc-17df2cd57c8d.json
+  keyfile: loremsvc-882ef153e8ce.json
   project: loremsvc
 before_install:
 - openssl aes-256-cbc -K $encrypted_82aad19ea289_key -iv $encrypted_82aad19ea289_iv
-  -in loremsvc-17df2cd57c8d.json.enc -out loremsvc-17df2cd57c8d.json -d
-
+  -in loremsvc-882ef153e8ce.json.enc -out loremsvc-882ef153e8ce.json -d
