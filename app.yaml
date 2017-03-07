@@ -1,5 +1,3 @@
-application: loremsvc
-version: 1
 runtime: go
 api_version: go1
 handlers:
