@@ -1,0 +1,12 @@
+language: go
+go:
+- tip
+script:
+- go build
+deploy:
+  provider: gae
+  keyfile: loremsvc-dd66182f509c.json
+  project: loremsvc
+before_install:
+- openssl aes-256-cbc -K $encrypted_0f391ba3b27c_key -iv $encrypted_0f391ba3b27c_iv
+  -in loremsvc-dd66182f509c.json.enc -out loremsvc-dd66182f509c.json -d
